@@ -1,0 +1,19 @@
+{
+  "name": "war.io-server",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magmiv/war.io-server"
+  },
+  "author": "magmiv",
+  "scripts": {
+    "start": "nodemon app/index.ts"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.5.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  }
+}
