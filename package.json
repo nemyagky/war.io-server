@@ -8,12 +8,17 @@
   },
   "author": "magmiv",
   "scripts": {
-    "start": "nodemon app/index.ts"
+    "start": "nodemon app/Main.ts"
   },
   "devDependencies": {
+    "nodemon": "^2.0.2",
     "ts-loader": "^6.2.1",
     "ts-node": "^8.5.0",
     "tslint": "^5.20.1",
     "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/socket.io": "^2.1.4",
+    "socket.io": "^2.3.0"
   }
 }
