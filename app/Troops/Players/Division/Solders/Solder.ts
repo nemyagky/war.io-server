@@ -1,4 +1,5 @@
 import { Functions } from "./../../../../Shared/Functions";
+
 export class Solder {
 
    public x: number;

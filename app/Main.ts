@@ -2,7 +2,7 @@ import { Network } from "./Network";
 import { io } from "./Shared/io";
 import { Troops } from "./Troops/Troops";
 
-// Работа над внедрением онлайна только началась. По всему проекту встречаются места, где необходима доработка и 
+// Работа над внедрением онлайна только началась. По всему проекту встречаются места, где необходима доработка и
 // рефакторинг
 // Качество кода на текущем этапе рассматривать не стоит
 const Main = new class MainSingleton {
@@ -15,8 +15,8 @@ const Main = new class MainSingleton {
       }, 1000 / 60);
 
       setInterval(() => {
-         io.emit("newState", Troops.getState());
-      }, 1000 / 60);
+         io.emit("updateState", Troops.getState());
+      }, 1000 / 20);
    }
 
 }();

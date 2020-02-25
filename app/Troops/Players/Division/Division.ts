@@ -3,6 +3,7 @@ import { Solder } from "./Solders/Solder";
 export class Division {
 
    public solders: Solder[] = [];
+   private id: string;
 
    public nextState() {
       this.solders.forEach((solder) => {
